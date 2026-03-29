@@ -24,6 +24,12 @@ app.use("/api/products", (req, res) => {
   });
 });
 
+app.use("/api/product", (req, res) => {
+  return res.status(200).json({
+    message: "Apple IPhone 16 Pro Max",
+  });
+});
+
 //error handler
 app.use(errorHandler);
 
